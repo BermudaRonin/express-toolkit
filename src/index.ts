@@ -1,7 +1,7 @@
 import * as Types from './types';
 import * as Helpers from './helpers';
 
-export default class Ep {
+export class Ep {
     public id: Types.ID
     public label: Types.Label
     public description: Types.Description
