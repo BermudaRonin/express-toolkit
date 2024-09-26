@@ -8,10 +8,11 @@ export type Message = string;
 export type Method = 'GET' | 'POST' | 'DELETE' | 'PUT'
 export type Endpoint = string
 
-export type SearchParams = { [key: string]: string } // TODO
-export type Params = { [key: string]: string } // TODO
-export type Body = { [key: string]: string } // TODO
-export type Headers = { [key: string]: string } // TODO
+export type SearchParams = Record<string, string>
+export type Params = Record<string, string>
+export type Body = Record<string, string>
+export type Headers = Record<string, string>
+export type Query = Record<string, string>
 
 export type SyncHandler = (req: ExpressRequest, res: ExpressResponse) => any
 export type AsyncHandler = (req: ExpressRequest, res: ExpressResponse) => Promise<any>

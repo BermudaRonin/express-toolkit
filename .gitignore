@@ -1,5 +1,11 @@
-/docs
-/build
 /node_modules
-/src/demo
+
+# Ignore test-related files
+/coverage.data
+/coverage/
+
+# Build files
+/dist
+
+# Other
 /src/config.js
